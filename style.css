@@ -169,8 +169,6 @@ bubble ::after{
 	box-shadow: var(--work-glow);
 	border-radius: 999px;
 	transition: 0.2s ease-in-out;
-
-
 }
 
 .bubble .personal ::after {
@@ -178,7 +176,7 @@ bubble ::after{
 	box-shadow: var(--personal-glow);
 }
 
-input:checked ~ .bubble::after {
+input :checked ~ .bubble::after {
 	width: 10px;
 	height: 10px;
 	opacity: 1;

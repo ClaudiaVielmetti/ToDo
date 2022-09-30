@@ -15,10 +15,60 @@
         <!--Intro to app-->
         <section class="intro">
             <h2 class="title">
-                Hello, <input type="text" id="name" placeholder="Name here"/>
+                Hello, <input type="text"
+                 id="name" 
+                 placeholder="Name here"/>
             </h2>
         </section>
         <!--End of Intro-->
+      
+     <!--This part is where you create the task to do-->
+        <section class="create">
+            <h3>CREATE A NEW TASK</h3>
+            <form id="new-task">
+                <h4>What's your new task?</h4>
+                <input 
+                    type="text"
+                    placeholder="e.g. Learn JS"
+                    name="content"
+                    id="content"/>
+
+                    <!--Due dae is to specify when the tasks need to be completed.
+                    It has been added with a calender that will work with JS-->
+                <h4>Due date</h4>
+                <input
+                    type="date"
+                    id="dateInput"/>
+
+            <!--Here you can choose what category the task falls under
+            colors will define different categories in the css-->
+            <h4>Task Category</h4> 
+                <div class="options">
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            id="category1"
+                            value="work"/>
+                        <span class="bubble work"></span>
+                        <div>Work</div>    
+                    </label> 
+                    
+                    <label>
+                        <input
+                            type="radio"
+                            name="category"
+                            id="category2"
+                            value="personal"/>
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>    
+                    </label> 
+                   
+                </div>
+
+            </form>
+        </section>
+
         
     </main>
     <!--Javascript link and js bootstrap-->

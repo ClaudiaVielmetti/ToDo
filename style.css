@@ -7,6 +7,7 @@
 	--grey:#696969;  
 	--dark: #1A1B41;
 	--danger: #ff5b57;
+    --boxes:  #f5f5f5;
 
 	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
@@ -79,7 +80,7 @@ h4 {
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
     color: var(--dark);
-    background-color: var(--light);
+    background-color: var(--boxes);
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
     margin-bottom: 1.5rem;
@@ -91,16 +92,17 @@ h4 {
     width: 100%;
     font-size: 1rem;
     padding: 1rem 1.5rem;
-    color: var(--dark);
-    background-color: var(--light);
     border-radius: 0.5rem;
-    box-shadow: var(--shadow);
+   
     margin-bottom: 1rem;
     
 }
 
 #dateInput {
     cursor: pointer;
+    background-color: var(--boxes);
+    color: var(--dark);
+    box-shadow: var(--shadow);
 }
 
 .create .options {
@@ -115,7 +117,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--light);
+    background-color: var(--boxes);
     padding: 1.5rem;
     box-shadow: var(--shadow);
     border-radius: 0.5rem;
@@ -137,4 +139,9 @@ input[type="checkbox"] {
     border-radius: 999px;
     border: 2px solid var(--work);
     box-shadow: var(--work-glow);
+}
+
+.bubble.personal {
+	border-color: var(--personal);
+	box-shadow: var(--personal-glow);
 }

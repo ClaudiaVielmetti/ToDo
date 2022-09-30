@@ -133,6 +133,9 @@ h4 {
 
 }
 
+/*The radio button in the categories
+styling each in their colum and respective colors*/
+
 input[type="radio"],
 input[type="checkbox"] {
 	display: none;
@@ -155,3 +158,4 @@ input[type="checkbox"] {
 	box-shadow: var(--personal-glow);
 }
 
+/*bubble animation added to make it look better when the button is clicked*/

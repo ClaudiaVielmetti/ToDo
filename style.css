@@ -1,0 +1,17 @@
+/*Variable colors for the todo project*/
+:root {
+	--primary:#6F73D2;
+	--work: #83C9F4;
+	--personal:#E5A4CB;
+	--light: #EEFFDB;
+	--grey:#696969;  
+	--dark: #1A1B41;
+	--danger: #ff5b57;
+
+	--shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+	--work-glow: 0px 0px 4px rgba(31, 201, 244, 0.75);
+	--personal-glow: 0px 0px 4px rgba(229, 164, 203, 0.75);
+}
+
+/**/

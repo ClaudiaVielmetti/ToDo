@@ -14,4 +14,18 @@
 	--personal-glow: 0px 0px 4px rgba(229, 164, 203, 0.75);
 }
 
-/**/
+/*Default styling for layout*/
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+}

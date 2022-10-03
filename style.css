@@ -180,3 +180,28 @@ input:checked ~ .bubble::after {
 	height: 10px;
 	opacity: 1;
 }
+
+.create .options label div {
+	color: var(--dark);
+	font-size: 1.125rem;
+	margin-top: 1rem;
+}
+/*Add task button color and animation*/
+.create input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    color: var(--boxes);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color:	#ad98c0;
+    box-shadow:var(--shadow);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-out;   
+}
+
+.create input[type="submit"]:hover {
+    opacity: 0.75;
+}

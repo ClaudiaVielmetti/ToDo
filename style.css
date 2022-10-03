@@ -205,3 +205,20 @@ input:checked ~ .bubble::after {
 .create input[type="submit"]:hover {
     opacity: 0.75;
 }
+
+/*to do list area where it is saved after creating it
+can be modified, deleted and marked as done*/
+.todo-list .list{
+    margin: 1rem 0;
+
+}
+
+.todo-list .todo-item{
+    display: flex;
+    align-items: center;
+    background-color: var(--boxes);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+}

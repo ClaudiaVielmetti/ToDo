@@ -253,26 +253,7 @@ can be modified, deleted and marked as done*/
 	align-items: center;
 }
 
-.todo-item .actions button {
-    display: block;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    color: var(--boxes);
-    cursor:pointer;
-    transition: 0.2s ease-in-out;
 
-}
-
-.todo-item .actions button:hover{
-    opacity: 0.75;
-}
-
-.todo-item .actions .edit{
-    margin-right: 0.5rem;
-    background-color:blueviolet;
-    box-shadow: var(--shadow);
-
-}
 
 
 .todo-item .actions .delete {

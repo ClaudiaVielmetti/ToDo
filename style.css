@@ -1,6 +1,6 @@
 /*Variable colors for the todo project*/
 :root {
-	--primary: 
+	--primary:linear-gradient(to right, #5c258d, #4389a2); 
 	--work: #83C9F4;
 	--personal:#E5A4CB;
 	--grey:#696969;  

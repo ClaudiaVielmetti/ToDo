@@ -1,9 +1,6 @@
 /*Variable colors for the todo project*/
 :root {
-	--primary: linear-gradient(to right bottom,
-     #5456e1, #7f67dd, #9d7ada, #b48fd9,
-      #c5a6d8, #ceb0db, #d6badf, #ddc5e3,
-       #e2c4ea, #e8c3f1, #edc1f8, #f2c0ff ) ;
+	--primary: 
 	--work: #83C9F4;
 	--personal:#E5A4CB;
 	--grey:#696969;  
@@ -17,10 +14,21 @@
 	--personal-glow: 0px 0px 4px rgba(229, 164, 203, 0.75);
 }
 
-html{
-    height: 100%;
+
+
+.intro-pic{
+	float: inline-end;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
 }
 
+.intro.title{
+	text-align: center;
+}
 /*Default styling for layout*/
 * {
     margin: 0;
@@ -38,6 +46,8 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 	background: none;
 	cursor: initial;
 }
+
+
 
 body{
     background:var(--primary);

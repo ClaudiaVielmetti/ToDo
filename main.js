@@ -41,6 +41,8 @@ window.addEventListener('load', () => {
 	DisplayTodos()
 })
 
+//displaying items on screen that has been inputted
+
 function DisplayTodos () {
 	const todoList = document.querySelector('#todo-list');
 	todoList.innerHTML = "";
@@ -56,6 +58,8 @@ function DisplayTodos () {
 		const actions = document.createElement('div');
 		const edit = document.createElement('button');
 		const deleteButton = document.createElement('button');
+
+        //differentiate between categories
 
 		input.type = 'checkbox';
 		input.checked = todo.done;
@@ -73,6 +77,8 @@ function DisplayTodos () {
 		content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
 		edit.innerHTML = 'Edit';
 		deleteButton.innerHTML = 'Delete';
+
+        // appendChild() moves it from its current position to the new position.
 
 		label.appendChild(input);
 		label.appendChild(span);
@@ -101,6 +107,8 @@ function DisplayTodos () {
 			DisplayTodos()
 
 		})
+
+        //delete and edit buttons for task list.. remove or make changes
 
 		edit.addEventListener('click', (e) => {
 			const input = content.querySelector('input');

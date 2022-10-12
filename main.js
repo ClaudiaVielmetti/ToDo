@@ -25,10 +25,13 @@ window.addEventListener('load', () => {
             content: e.target.elements.content.value,
             category:e.target.elements.category.value,
             done: false,
-            
 
         }
+        todos.push(todo);
 
+        localStorage.setItem('todos', JSON.stringify(todos));
+
+        e.target.reset();
     })
 
 })

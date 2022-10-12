@@ -21,6 +21,8 @@ window.addEventListener('load', () => {
     newTask.addEventListener('submit', e => {
         e.preventDefault();
 
+        
+
         const todo = {
 			content: e.target.elements.content.value,
 			category: e.target.elements.category.value,

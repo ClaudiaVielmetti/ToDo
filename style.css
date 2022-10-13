@@ -53,7 +53,12 @@ body{
     background:var(--primary);
     color:var(dark);
 }
-
+.app{
+	border-radius: 8px;
+	border: 5px solid var(--grey);
+	padding: 15px;
+	width: 300px;
+}
 section {
 	margin-top: 2rem;
 	margin-bottom: 2rem;

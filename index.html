@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,60 +33,20 @@
       
      <!--This part is where you create the task to do-->
         <section class="create">
-            <h3>CREATE A NEW TASK</h3>
-            <form id="new-task">
-                <h4>What's your new task?</h4>
-                <input 
-                    type="text"
-                    placeholder="e.g. Learn JS"
-                    name="content"
-                    id="content"/>
-
-                    <!--Due dae is to specify when the tasks need to be completed.
-                    It has been added with a calender that will work with JS-->
-                <h4>Due date</h4>
-                <input 
-                    class="due"
-                    type="date"
-                    id="dateInput"/>
-
-            <!--Here you can choose what category the task falls under
-            colors will define different categories in the css-->
-            <h4>Task Category</h4> 
-                <div class="options">
-                    <label>
-                        <input
-                            type="radio"
-                            name="category"
-                            id="category1"
-                            value="work"/>
-                        <span class="bubble work"></span>
-                        <div>Work</div>    
-                    </label> 
-                    
-                    <label>
-                        <input
-                            type="radio"
-                            name="category"
-                            id="category2"
-                            value="personal"/>
-                        <span class="bubble personal"></span>
-                        <div>Personal</div>    
-                    </label> 
-                   
-                </div>
-                <input
-                     type="submit"
-                     value="Add task" />
-
-            </form>
+            <h3 class="text-center">CREATE A NEW TASK</h3>
+            <div id="new-task" data-bs-toggle="modal" data-bs-target="#form"></form>
+                
+               <span class=>New Task Here</span>
+               <i class="fas fa-plus"></i> 
+            </div>
         </section>
 
         <!--This section will contain the tasks that were created above (the list)-->
         <section class="todo-list">
-			<h3>To-Do List</h3>
+			<h3>My Todo's:</h3>
 			<div class="list" id="todo-list"></div>
 		</section>
+      
 
 
     </main>

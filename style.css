@@ -52,6 +52,11 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 body{
     background:var(--primary);
     color:var(dark);
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .app{
 	border-radius: 8px;
@@ -110,23 +115,6 @@ h4 {
 
 }
 
-.due  {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-    padding: 1rem 1.5rem;
-    border-radius: 0.5rem;
-   
-    margin-bottom: 1rem;
-    
-}
-
-#dateInput {
-    cursor: pointer;
-    background-color: var(--boxes);
-    color: var(--dark);
-    box-shadow: var(--shadow);
-}
 
 .create .options {
     display: grid;

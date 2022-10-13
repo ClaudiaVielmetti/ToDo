@@ -39,6 +39,7 @@
     font-family: 'Exo', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
+	background: var(--primary);
 }
 
 input:not([type="radio"]):not([type="checkbox"]), button {
@@ -52,13 +53,14 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 
 
 body {
-    background:var(--primary);
     color:var(dark);
 	overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+	background: url(./Images/space.jfif);
+	
 
 }
 
@@ -66,20 +68,19 @@ body {
 	display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--boxes);
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
+	
 }
-
-
 
 
 .app {
 	border-radius: 8px;
-	border: 5px solid var(--grey);
+	border: 5px solid var(--dark);
 	padding: 15px;
 	width: 300px;
+	
 }
 section {
 	margin-top: 0.5rem;
@@ -105,6 +106,7 @@ h4 {
 .intro.title{
     display: flex;
 	margin-bottom: 1rem;
+
 }
 
 .intro.title input {

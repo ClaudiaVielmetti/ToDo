@@ -176,25 +176,9 @@ input:checked ~ .bubble::after {
 	font-size: 1.125rem;
 	margin-top: 1rem;
 }
-/*Add task button color and animation*/
-.create input[type="submit"] {
-    display: block;
-    width: 100%;
-    font-size: 1.25rem;
-    padding: 1rem 1.5rem;
-    color: var(--boxes);
-    font-weight: 700;
-    text-transform: uppercase;
-    background-color:	#ad98c0;
-    box-shadow:var(--shadow);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.2s ease-out;   
-}
 
-.create input[type="submit"]:hover {
-    opacity: 0.75;
-}
+  
+
 
 /*to do list area where it is saved after creating it
 can be modified, deleted and marked as done*/

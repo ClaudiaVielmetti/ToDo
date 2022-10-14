@@ -53,7 +53,7 @@ input:not([type="radio"]):not([type="checkbox"]), button {
 
 
 body {
-    color:var(dark);
+    
 	overflow: hidden;
     display: flex;
     justify-content: center;
@@ -74,6 +74,13 @@ body {
 	
 }
 
+.fa-plus {
+    background-color:blueviolet;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+
 
 .app {
 	border-radius: 8px;
@@ -89,19 +96,7 @@ section {
 	padding-right: 1.5rem;
 }
 
-h3 {
-	color: var(--dark);
-	font-size: 1.5rem;
-	font-weight: 400;
-	margin-bottom: 0.5rem;
-}
 
-h4 {
-	color: var(--dark);
-	font-size: 1rem;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
-}
 
 .intro.title{
     display: flex;
@@ -123,39 +118,10 @@ h4 {
 	font-weight: 700;
 }
 
-.create input[type="text"]{
-    display: block;
-    width: 100%;
-    font-size: 1.125rem;
-    padding: 1rem 1.5rem;
-    color: var(--dark);
-    background-color: var(--boxes);
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow);
-    margin-bottom: 1.5rem;
-
-}
 
 
-.create .options {
-    display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 1rem;
-	margin-bottom: 1.5rem;
-}
 
-.create .options label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--boxes);
-    padding: 1.5rem;
-    box-shadow: var(--shadow);
-    border-radius: 0.5rem;
-    cursor: pointer;
 
-}
 
 /*The radio button in the categories
 styling each in their colum and respective colors*/
@@ -240,6 +206,7 @@ can be modified, deleted and marked as done*/
 
 .todo-list .todo-item{
 	border: 3px solid var(--dark);
+	box-shadow: var(--shadow);
     border-radius: 6px;
     padding: 5px;
     display: grid;
@@ -247,8 +214,5 @@ can be modified, deleted and marked as done*/
 }
 
 .todo-item label{
-	justify-self: center;
-    display: flex;
-    gap: 20px;
 	cursor: pointer;
 }

@@ -6,6 +6,18 @@ let msg = document.getElementById("msg");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
 
+window.addEventListener('load', () => {
+	todos = JSON.parse(localStorage.getItem('todos')) || [];
+	const nameInput = document.querySelector('#name');
+	const newTodoForm = document.querySelector('#new-todo-form');
+
+	const username = localStorage.getItem('username') || '';
+
+	nameInput.value = username;
+
+	nameInput.addEventListener('change', (e) => {
+		localStorage.setItem('username', e.target.value);
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     formValidation();
@@ -96,4 +108,3 @@ let deleteTask = (e) => {
     console.log(data);
     createTasks();
   })();
-  

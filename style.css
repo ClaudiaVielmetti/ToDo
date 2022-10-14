@@ -39,7 +39,7 @@
     font-family: 'Exo', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	background: var(--primary);
+	background: #f5f5f5;
 }
 
 input:not([type="radio"]):not([type="checkbox"]), button {
@@ -233,47 +233,22 @@ input:checked ~ .bubble::after {
 /*to do list area where it is saved after creating it
 can be modified, deleted and marked as done*/
 .todo-list .list{
-    margin: 1rem 0;
-
+	display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
 }
 
 .todo-list .todo-item{
+	border: 3px solid var(--dark);
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+}
+
+.todo-item label{
+	justify-self: center;
     display: flex;
-    align-items: center;
-    background-color: var(--boxes);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow);
-    margin-bottom: 1rem;
-}
-
-.todo-item label {
-	display: block;
-	margin-right: 1rem;
+    gap: 20px;
 	cursor: pointer;
-}
-
-.todo-item .todo-content {
-	flex: 1 1 0%;
-}
-
-.todo-item .todo-content input {
-	color: var(--dark);
-	font-size: 1.125rem;
-}
-
-.todo-item .actions {
-	display: flex;
-	align-items: center;
-}
-
-
-.todo-item .actions .delete {
-	background-color: var(--danger);
-    box-shadow: var(--shadow);
-}
-
-.todo-item.done .todo-content input {
-	text-decoration: line-through;
-	color: var(--grey);
 }

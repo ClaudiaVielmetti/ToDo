@@ -54,6 +54,7 @@ let createTasks = () => {
   
           <span class="options">
             <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
+            <i onClick= "completeTask(this);createTasks(strike)" class="fa fa-check"></i>
             <i onClick ="deleteTask(this);createTasks()" class="fas fa-trash-alt"></i>
           </span>
         </div>
@@ -70,6 +71,19 @@ let deleteTask = (e) => {
   console.log(data);
   
 };
+
+let completeTask = (e) => {
+  const element = createTasks
+  console.log(createTasks) = createTasks.queryselector("tasks")
+  let createTasks = e.parentElement.parentElement;
+ 
+     
+  // style..
+  createTasks.style.textDecoration = "line-through";
+  
+
+  deleteTask(e);
+}
 
 let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement;

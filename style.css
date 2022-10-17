@@ -16,7 +16,7 @@
 
 
 
-.intro-pic{
+.profile{
 	float: inline-end;
 	border-radius: 50%;
 	display: block;
@@ -24,6 +24,7 @@
 	margin-right: auto;
 	margin-top: 1rem;
 	width: 100px;
+	margin-bottom: 2rem;
 
 
 }
@@ -117,68 +118,6 @@ section {
 	font-size: 1.5rem;
 	font-weight: 700;
 }
-
-
-
-
-
-
-/*The radio button in the categories
-styling each in their colum and respective colors*/
-
-input[type="radio"],
-input[type="checkbox"] {
-	display: none;
-}
-
-/*Animation for when the radio button has been chosen*/
-.bubble {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 2px solid var(--work);
-	box-shadow: var(--work-glow);
-}
-
-.bubble.personal {
-	border-color: var(--personal);
-	box-shadow: var(--personal-glow);
-}
-
-.bubble::after {
-	content: '';
-	display: block;
-	opacity: 0;
-	width: 0px;
-	height: 0px;
-	background-color: var(--work);
-	box-shadow: var(--work-glow);
-	border-radius: 50%;
-	transition: 0.2s ease-in-out;
-}
-
-.bubble.personal::after {
-	background-color: var(--personal);
-	box-shadow: var(--personal-glow);
-}
-
-input:checked ~ .bubble::after {
-	width: 10px;
-	height: 10px;
-	opacity: 1;
-}
-
-.create .options label div {
-	color: var(--dark);
-	font-size: 1.125rem;
-	margin-top: 1rem;
-}
-
-  
-
 
 /*to do list area where it is saved after creating it
 can be modified, deleted and marked as done*/

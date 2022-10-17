@@ -16,41 +16,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="app">
+        <h4 class="mb-3">TODO App</h4>
+        <img src="./Images/wake-up.jpg" class="profile" alt="picture">
     
-    <!--Main section for to do app html setup-->
-    <main class="app">
-        <!--Intro to app-->
-        <section class="intro">
-            <h2 class="title">
-                Hello, <input type="text"
-                 id="name" 
-                 placeholder="Name here"/>
-                 <img class="intro-pic" src="./Images/wake-up.jpg" alt="girl">
-            </h2>
-        </section>
-        <!--End of Intro-->
-      
-     <!--This part is where you create the task to do-->
-        <section class="create">
-            <h3 class="text-center">CREATE A NEW TASK</h3>
-            <div id="new-task" data-bs-toggle="modal" data-bs-target="#form"></form>
-                
-               <span>New Task Here</span>
-               <i class="fas fa-plus"></i> 
+    
+        <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+          <span>Add New Task</span>
+          <i class="fas fa-plus"></i>
+        </div>
+    
+        <!-- Modal -->
+        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Task Title</p>
+                <input type="text" class="form-control" name="" id="textInput">
+                <div id="msg"></div>
+                <br>
+                <p>Due Date</p>
+                <input type="date" class="form-control" name="" id="dateInput">
+                <br>
+                <p>Description</p>
+                <textarea name="" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" id="add" class="btn btn-primary">Add</button>
+              </div>
             </div>
-        </section>
-
-        <!--This section will contain the tasks that were created above (the list)-->
-        <section class="todo-list">
-			<h3>My Todo's:</h3>
-			<div class="list" id="todo-list"></div>
-		</section>
-
-      
-
-
-    </main>
+          </div>
+        </form>
+    
+        <h5 class="text-center my-3">Tasks</h5>
+    
+        <div id="tasks">
+    
+        </div>
+      </div>
+   
     <!--Javascript link and js bootstrap-->
     <script src="main.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 

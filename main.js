@@ -74,16 +74,18 @@ let deleteTask = (e) => {
 
 let completeTask = (e) => {
   const element = createTasks
-  console.log(createTasks) = createTasks.queryselector("tasks")
-  let createTasks = e.parentElement.parentElement;
- 
+  console.log(check) = createTasks.queryselector("tasks")
+  let check = e.parentElement.parentElement;
      
   // style..
-  createTasks.style.textDecoration = "line-through";
+  check.style.textDecoration = "line-through";
   
 
   deleteTask(e);
 }
+
+  
+
 
 let editTask = (e) => {
   let selectedTask = e.parentElement.parentElement;

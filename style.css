@@ -139,3 +139,7 @@ can be modified, deleted and marked as done*/
 .todo-item label{
 	cursor: pointer;
 }
+
+.options{
+	cursor: pointer;
+}
